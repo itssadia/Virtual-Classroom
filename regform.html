@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+       
+    <title>registration form</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <style>.asteriskField{color: red;}</style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+
+        crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+
+        crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+
+        crossorigin="anonymous"></script>
+    
+</head>
+<body>
+     <div class="page-header text-center" style="margin-top: 100px;">
+            <h1>Registration Form</h1>
+        </div>
+    <div class="container" style="margin-top: 50px;
+    margin-left: 290px;
+    margin-right: 500px;
+
+    form{
+  padding:100px;
+}
+   ">
+  
+  
+
+        <div class="d-flex justify-content-center">
+            <div class="col-md-12 col-md-offset-3">
+                 <div class = "card p-5">
+
+<form action="/register/"  method="POST" class="fos_user_registration_register form-horizontal" autocomplete='off'>
+    <fieldset>
+        
+                            <div class="form-group">
+        <label class="col-md-4 control-label required" for="fos_user_registration_form_firstName">First name</label>
+        <div class="col-md-6">
+            <input type="text" id="fos_user_registration_form_firstName" name="fos_user_registration_form[firstName]" required="required" maxlength="255"    class="form-control" />
+            <span class="help-block"></span>
+        </div>
+    </div>
+        
+                            <div class="form-group">
+        <label class="col-md-4 control-label required" for="fos_user_registration_form_lastName">Last name</label>
+        <div class="col-md-6">
+            <input type="text" id="fos_user_registration_form_lastName" name="fos_user_registration_form[lastName]" required="required" maxlength="255"    class="form-control" />
+            <span class="help-block"></span>
+        </div>
+    </div>
+        
+                            <div class="form-group">
+        <label class="col-md-4 control-label required" for="fos_user_registration_form_designation">Designation</label>
+        <div class="col-md-6">
+            <select id="fos_user_registration_form_designation" name="fos_user_registration_form[designation]"    class="form-control"><option value="provost">Provost</option><option value="hall officer">Hall Officer</option></select>
+            <span class="help-block"></span>
+        </div>
+    </div>
+        
+                            <div class="form-group">
+        <label class="col-md-4 control-label required" for="fos_user_registration_form_department">Department</label>
+        <div class="col-md-6">
+            <select id="fos_user_registration_form_department" name="fos_user_registration_form[department]"    class="form-control"><option value="1">ME - Dept. of Mechanical Engineering</option><option value="2">IPE - Dept. of Industrial &amp; Production Engineering</option><option value="3">GCE - Dept. of Glass and Ceramic Engineering</option><option value="4">MTE - Dept. of Mechatronics Engineering</option><option value="5">CE - Dept. of Civil Engineering</option><option value="6">CSE - Dept. of Computer Science &amp; Engineering</option><option value="7">EEE - Dept. of Electrical and Electronic Engineering</option><option value="8">Architecture - Dept. of Architecture</option><option value="9">ECE - Department of Electrical and Computer Engineering</option><option value="10">CFPE - Department of Chemical and Food Process Engineering</option><option value="11">MSE - Materials Science &amp; Engineering</option><option value="12">BECM - Building Engineering &amp; Construction Management</option><option value="13">ETE - Dept. of Electronics and Telecommunication Engineering</option><option value="14">URP - Dept. of Urban &amp; Regional Planning</option><option value="15">None</option></select>
+            <span class="help-block"></span>
+        </div>
+    </div>
+        
+         <div class="form-group">
+         <label class="col-md-4 control-label required" for="fos_user_registration_form_Assigned_hall">Assigned Hall</label>
+        <div class="col-md-6">
+            <select id="fos_user_registration_form_Assigned_hall" name="fos_user_registration_form[assigned_hall]"   class="form-control"><option value="1">Bangabandhu Sheikh Mujibur Rahman Hall</option><option value="2">Shahid Lt Selina Hall</option><option value="3">Shahid Shahidul Islam Hall</option><option value="4">Shahid Abdul Hamid Hall</option><option value="5">Shahid President Ziaur Rahman Hall</option><option value="6">Deshratna Sheikh Hasina Hall<</option></select>
+            <span class="help-block"></span>
+        </div>
+    </div>
+         
+                            <div class="form-group">
+        <label class="col-md-4 control-label required" for="fos_user_registration_form_email">Email:</label>
+        <div class="col-md-6">
+            <input type="email" id="fos_user_registration_form_email" name="fos_user_registration_form[email]" required="required"    class="form-control" />
+            <span class="help-block"></span>
+        </div>
+    </div>
+        
+                            <div class="form-group">
+        <label class="col-md-4 control-label required" for="fos_user_registration_form_username">Username:</label>
+        <div class="col-md-6">
+            <input type="text" id="fos_user_registration_form_username" name="fos_user_registration_form[username]" required="required" maxlength="255" pattern=".{2,}"    class="form-control" />
+            <span class="help-block"></span>
+        </div>
+    </div>
+        
+                                                    <div class="form-group">
+        <label class="col-md-4 control-label required" for="fos_user_registration_form_plainPassword_first">Password:</label>
+        <div class="col-md-6">
+            <input type="password" id="fos_user_registration_form_plainPassword_first" name="fos_user_registration_form[plainPassword][first]" required="required"    class="form-control" />
+            <span class="help-block"></span>
+        </div>
+    </div>
+        
+                                <div class="form-group">
+        <label class="col-md-4 control-label required" for="fos_user_registration_form_plainPassword_second">Confirm Password:</label>
+        <div class="col-md-6">
+            <input type="password" id="fos_user_registration_form_plainPassword_second" name="fos_user_registration_form[plainPassword][second]" required="required"    class="form-control" />
+            <span class="help-block"></span>
+        </div>
+    </div>
+        
+            
+                            <div class="form-group">
+        <label class="col-md-4 control-label required" for="fos_user_registration_form_captcha">Captcha</label>
+        <div class="col-md-6">
+            <img id="captcha_5c5ae833a816f" src="/_gcb/generate-captcha/gcb_captcha" alt="" title="captcha" width="300" height="80" /><script type="text/javascript">
+        function reload_captcha_5c5ae833a816f() {
+            var img = document.getElementById('captcha_5c5ae833a816f');
+            img.src = '/_gcb/generate-captcha/gcb_captcha?n=' + (new Date()).getTime();
+        }
+    </script><a class="captcha_reload" href="javascript:reload_captcha_5c5ae833a816f();">Renew</a><input type="text" id="fos_user_registration_form_captcha" name="fos_user_registration_form[captcha]" required="required"    class="form-control" />
+            <span class="help-block"></span>
+        </div>
+    </div>
+        
+                                <input type="hidden" id="fos_user_registration_form__token" name="fos_user_registration_form[_token]" value="b2e7bc2e5954dc66f607243f1165dbb3285df8ba" />
+        
+                <div class="form-group">
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-10">
+                <span>* All fields are mandatory</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="submit"></label>
+            <div class="col-md-8">
+                <button type="submit" name="submit" class="btn btn-success">Submit</button>
+                <button type="reset" name="reset" class="btn btn-danger">Reset</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
