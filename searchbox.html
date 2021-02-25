@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+IRuM
+</title>
+<style>
+*{
+  box-sizing:border-box;
+}
+body{
+  background:#574ab9;
+}
+form{
+   width;100%;
+   margin-left:30px;
+   margin-top:200px;
+   }
+input[type=text]{
+     width:80%;
+  padding:15px;
+  border:none;
+  font-size:18px;
+  font-family:sans-serif;
+  border-radius:5px 0 0 5px;
+} 
+input[type=submit]{
+     padding:15px;
+  border:none;
+  font-size:18px;
+  font-family:sans-serif;
+  background:orange;
+  color:white;
+  border-radius:5px 0 0 5px;
+  cursor:pointer;
+  position:absolute;
+} 
+
+@media screen and (max-width:600px){
+    form{
+      margin:0;
+   
+ }
+     input[type=text]{
+        width:100%;
+     border-radius:5px;
+     padding:10px;
+  }
+  input[type=submit]{
+        border-radius:5px;
+     width:100%;
+     position:static;
+     margin-top:5px;
+     padding:10px;
+  }
+}
+   
+
+</style>
+
+</head>
+<body>
+<form>
+<input type ="text" name = "search" placeholder = "Search">
+<input type ="submit" name = "submit" value = "Search">
+</form>
+</body>
+</html>﻿
+ 
+
